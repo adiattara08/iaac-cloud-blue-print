@@ -4,7 +4,8 @@ services:
     runtime: node
     region: oregon # optional (defaults to oregon)
     branch: master # optional (defaults to master)
-    nodeCommand: npm install && npm start
+    buildCommand: npm install
+    startCommand: npm start
     rootDir:
     envVars:
       - key: DB_URL
