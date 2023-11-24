@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: web
+    runtime: node
+    region: oregon # optional (defaults to oregon)
+    branch: master # optional (defaults to master)
+    rootDir:
+    envVars:
+      - key: DB_URL
+        fromDatabase:
+            name: mysql
+            property: connectionString
+databases:
+  - name: mysql
+    databaseName: mydb # optional (Render may add a suffix)
+    user: adrian # optional
