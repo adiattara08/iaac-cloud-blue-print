@@ -4,6 +4,7 @@ services:
     runtime: node
     region: oregon # optional (defaults to oregon)
     branch: master # optional (defaults to master)
+    dockerCommand: npm install && npm start
     rootDir:
     envVars:
       - key: DB_URL
