@@ -15,5 +15,6 @@ services:
             property: connectionString
 databases:
   - name: mysql
+    plan: free
     databaseName: mydb # optional (Render may add a suffix)
     user: adrian # optional
